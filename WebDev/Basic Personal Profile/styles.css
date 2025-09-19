@@ -1,0 +1,221 @@
+/* Nazariy Buryak */
+/* C00305614 */
+/* CW_KCCYB_D */
+/* Group B */
+/*This is my CSS page*/
+
+/*Style for my body, sets gradient background for entire page, removes default margin, arial and sans-serif font, adds padding, 1.6 line height*/
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+/*Main table style, table width 100% with max width of 1200px, centers the table horizontally and removes gaps from table cells*/
+/*Adds nice box shadow, rounds the corders, white background*/
+.main-table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+}
+
+/*Header section, adds a gradient background and white text, centers the text and adds padding for spacing*/
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/*Style for header's h1 element, adds spacing around heading, increases font size, adds text shadow */
+.header h1 {
+    margin: 20px 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/*My profile picture class that specifies the size of picture, cover to make picture not stretch out, */
+.pfp {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/*Added spacing above the navigation bar*/
+.navigation {
+    margin-top: 20px;
+}
+
+/*Changes text color to white, removed the underline from links, added padding for better spacing, set margin between the links*/
+/*rounded the corners of the link, transperent background, transition when hovering on it, make all links in one line */
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+/*My navigation bar settings when you hover your cursor over the element, it changes it's color to lighter grey, and it transforms by making it slightly pop-out*/
+.navigation a:hover {
+    background: rgba(255,255,255,0.3);
+    transform: translateY(-2px);
+}
+
+/*Styles current page link in the nav bar, highlights the current page link with slightly darker background, bold text to indicate active page*/
+.navigation a.current-page {
+    background: rgba(255,255,255,0.4);
+    font-weight: bold;
+}
+
+/*Main content area, sets a white background and adds padding for spacing*/
+.content {
+    background: white;
+    padding: 40px;
+}
+
+/*Style for headings inside the content area, sets dark grey color, increases font size, centers the text and adds spacing below*/
+.content h3 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*Style for my intro paragraph, sets a slightly larger font size, light grey color, centers the text, spacing below*/
+.intro-paragraph {
+    font-size: 1.1em;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*Style for my about section, uses grid layout with two equal columns, adds gap between grid items and vertical spacing around the section*/
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+/*Color for the cards to match the home page, adds space inside the cards, rounds the corners and adds a nice shadow at the bottom*/
+.what-i-do, .likes-dislikes, .info-card {
+    background: #f8f9ff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/*Sets the heading text color to a blue shade, makes font size a bit bigger and adds spacing below the heading*/
+.what-i-do h4, .likes-dislikes h4, .info-card h4 {
+    color: #667eea;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+/*Made gradient background, for home page, makes white text, centers it and adds space inside the footer*/
+.footer-home {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Changes link color to white, removes underline from links, bold font*/
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Adds an underline when hovering over the link*/
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/*Adds vertical spacing around the link section and centers the links*/
+.external-links {
+    margin: 30px 0;
+    text-align: center;
+}
+
+/*My external links class that specifies the style of buttons for external links*/
+/*Styles external link buttons with padding, rounded corners, and a blue background, adds a smooth transition effect when hovering over a link*/
+.external-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background: #667eea;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+/*-My external links settings are when you hover your cursor over the button, it changes it's color to purple and slightly pop-out*/
+.external-links a:hover {
+    background: #764ba2;
+    transform: translateY(-2px);
+}
+
+/*My theme class for F1 page, it uses picture of F1 car as its background and white color for text inside the class*/
+/*The image will not repeat, it will be centered both horizontally and vertically, and it scales to cover the entire element*/
+.f1-theme {
+    background: url("519aaf0c0334653b08f52dba36d2c5a9577485b5-4088x3066.jpg") no-repeat center center/cover;
+    color: white;
+}
+
+/*Style for F1 card, adds a blue left border to visually distinguish the card*/
+.f1-card {
+    border-left: 5px solid #3594dc;
+}
+
+/*Styles the heading inside the F1 card, sets the heading text color to same as the border*/
+.f1-card h4 {
+    color: #3594dc;
+}
+
+/*My theme class for hobby page, it uses external as its background and white color for text inside the class*/
+/*The image will not repeat, it will be centered both horizontally and vertically, and it scales to cover the entire element*/
+.hobby-theme {
+    background: url("F1-Sim-Racing-Cockpit-F1-Drive-London.webp") no-repeat center center/cover;
+    color: white;
+}
+
+/*Style for hobby card, adds a purple left border to visually distinguish the card*/
+.hobby-card {
+    border-left: 5px solid #8128a7;
+}
+
+/*Styles the heading inside the hobby card, sets the heading text color to same as the border*/
+.hobby-card h4 {
+    color: #8128a7;
+}
+
+/*My theme class for HashiCorp, it uses external as its background and white color for text inside the class*/
+/*The image will not repeat, it will be centered both horizontally and vertically, and it scales to cover the entire element*/
+.hashicorp-theme {
+    background: url("fakeimage.jpg") no-repeat center center/cover;
+    color: white;
+}
+
+/*Style for HashiCorp card, adds a dark purple left border to visually distinguish the card*/
+.hashicorp-card {
+    border-left: 5px solid #563d7c;
+}
+
+/*Styles the heading inside the HashiCorp card, sets the heading text color to same as the border*/
+.hashicorp-card h4 {
+    color: #563d7c;
+}
